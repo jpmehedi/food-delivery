@@ -1,46 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/utils/colors.dart';
-class LoginScreen extends StatelessWidget {
-  static const String PATH = "/LoginScreen";
-  const LoginScreen({ Key? key }) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Container(
-        padding: EdgeInsets.all(20),
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            CustomLongButton(
-              onPressed: (){},
-              buttonName: "Login",
-            ),
-            SizedBox(height: 20,),
-            CustomLongButton(
-              onPressed: (){},
-              buttonName: "Login with facebook",
-              backgroundColor: AppColor.secondaryColor,
-              icon: Icons.face_outlined,
-            ),
-            SizedBox(height: 20,),
-           CustomLongButton(
-              onPressed: (){},
-              buttonName: "Create an account",
-              backgroundColor: Colors.white,
-              textColor: AppColor.primaryTextColor,
-              borderSide: BorderSide(
-                color: Colors.red,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 class CustomLongButton extends StatelessWidget {
   final VoidCallback ? onPressed;
