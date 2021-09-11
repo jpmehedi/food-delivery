@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
   static const String PATH = "MenuScreen";
-  const MenuScreen({ Key? key }) : super(key: key);
+  const MenuScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,11 +10,17 @@ class MenuScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
-        title: Text("Menu", style: TextStyle(color: Colors.orange),), 
+        title: Text(
+          "Menu",
+          style: TextStyle(color: Colors.orange),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 20),
-            child: Icon(Icons.shopping_bag, color: Colors.orange,),
+            child: Icon(
+              Icons.shopping_bag,
+              color: Colors.orange,
+            ),
           )
         ],
       ),
@@ -29,7 +35,9 @@ class MenuScreen extends StatelessWidget {
                 height: 48,
                 color: Colors.grey,
               ),
-              SizedBox(height: 40,),
+              SizedBox(
+                height: 40,
+              ),
               Container(
                 width: double.infinity,
                 child: Stack(
@@ -38,12 +46,10 @@ class MenuScreen extends StatelessWidget {
                       width: MediaQuery.of(context).size.width / 8,
                       height: MediaQuery.of(context).size.height,
                       decoration: BoxDecoration(
-                        color: Colors.orange,
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(25),
-                          bottomRight: Radius.circular(25)
-                        )
-                      ),
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(25),
+                              bottomRight: Radius.circular(25))),
                     ),
                     Positioned(
                       top: 30,
@@ -52,22 +58,21 @@ class MenuScreen extends StatelessWidget {
                         width: MediaQuery.of(context).size.width - 100,
                         height: 60,
                         decoration: BoxDecoration(
-                          color: Colors.red,
-                           boxShadow: [
+                            color: Colors.red,
+                            boxShadow: [
                               BoxShadow(
-                                  color: Colors.grey,
-                                  spreadRadius: 1,
-                                  blurRadius: 1,
-                                  offset: Offset(0, 2), // changes position of shadow
+                                color: Colors.grey,
+                                spreadRadius: 1,
+                                blurRadius: 1,
+                                offset:
+                                    Offset(0, 2), // changes position of shadow
                               ),
-                          ],
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(15),
-                            bottomRight: Radius.circular(15),
-                            topLeft: Radius.circular(30),
-                            bottomLeft: Radius.circular(30)
-                          )
-                        ),
+                            ],
+                            borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(15),
+                                bottomRight: Radius.circular(15),
+                                topLeft: Radius.circular(30),
+                                bottomLeft: Radius.circular(30))),
                       ),
                     ),
                     Positioned(
@@ -76,7 +81,8 @@ class MenuScreen extends StatelessWidget {
                       child: Container(
                         child: CircleAvatar(
                           radius: 25,
-                          backgroundImage: AssetImage("assets/image/burger.jpg"),
+                          backgroundImage:
+                              AssetImage("assets/image/burger.jpg"),
                         ),
                       ),
                     ),
@@ -84,37 +90,33 @@ class MenuScreen extends StatelessWidget {
                       right: 20,
                       top: 45,
                       child: Container(
-                        width: 32,
-                        height: 32,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(16)
-                        ),
-                        child: Icon(Icons.arrow_forward_ios)
-                      ),
+                          width: 32,
+                          height: 32,
+                          decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(16)),
+                          child: Icon(Icons.arrow_forward_ios)),
                     ),
-      
-                        //       decoration: BoxDecoration(
-                        //   color: Colors.blue,
-                        //   borderRadius: BorderRadius.only(
-                        //     topRight: Radius.circular(60),
-                        //     bottomRight: Radius.circular(10),
-                        //     topLeft: Radius.circular(30),
-                        //     bottomLeft: Radius.circular(10)
-                        //   )
-                        // ),
-                  Positioned(
+
+                    //       decoration: BoxDecoration(
+                    //   color: Colors.blue,
+                    //   borderRadius: BorderRadius.only(
+                    //     topRight: Radius.circular(60),
+                    //     bottomRight: Radius.circular(10),
+                    //     topLeft: Radius.circular(30),
+                    //     bottomLeft: Radius.circular(10)
+                    //   )
+                    // ),
+                    Positioned(
                       left: 15,
                       top: 120,
                       child: Container(
-                        width: 100,
-                        height: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(20)
-                        ),
-                        child: Icon(Icons.arrow_forward_ios)
-                      ),
+                          width: 100,
+                          height: 100,
+                          decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Icon(Icons.arrow_forward_ios)),
                     ),
                     // ClipPath(
                     //   clipper: TriangleClipper(),
