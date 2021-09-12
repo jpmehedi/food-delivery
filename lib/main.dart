@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:food_delivery/views/homepage/homePage.dart';
 import 'package:food_delivery/views/login/login.dart';
+import 'package:food_delivery/views/otp/otp.dart';
 import 'package:food_delivery/views/menu/menu.dart';
 import 'package:food_delivery/views/signup/signup.dart';
+import 'package:food_delivery/welcome/welcome.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
         MenuScreen.PATH: (ctx) => HomePage(),
         SignUpScreen.PATH: (ctx) => SignUpScreen(),
         HomePage.PATH: (ctx) => HomePage()
+        Otppage.PATH: (ctx) => Otppage(),
+        Welcomescreen.PATH: (ctx) => Welcomescreen(),
       },
     );
   }
