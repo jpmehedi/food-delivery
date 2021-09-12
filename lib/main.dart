@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/views/login/login.dart';
 import 'package:food_delivery/views/otp/otp.dart';
+import 'package:food_delivery/views/menu/menu.dart';
 import 'package:food_delivery/views/signup/signup.dart';
 import 'package:food_delivery/welcome/welcome.dart';
 
@@ -16,12 +17,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Food Delivery App",
       debugShowCheckedModeBanner: false,
-      initialRoute: LoginScreen.PATH,
+      initialRoute: MenuScreen.PATH,
       routes: {
         LoginScreen.PATH: (ctx) => LoginScreen(),
         SignUpScreen.PATH: (ctx) => SignUpScreen(),
         Otppage.PATH: (context) => Otppage(),
         Welcomescreen.PATH: (context) => Welcomescreen(),
+        SignUpScreen.PATH: (ctx)=> SignUpScreen(),  
       },
     );
   }
